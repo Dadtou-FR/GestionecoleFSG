@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "gestionecole-frontend",
   "version": "0.1.0",
   "private": true,
@@ -44,5 +45,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+=======
+  "dependencies": {
+    "axios": "^1.11.0"
+>>>>>>> 9615fdcbc8b3e6f788e2a1258d0834545221cbcf
   }
 }
