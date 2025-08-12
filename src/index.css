@@ -11,3 +11,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Styles pour l'impression des bulletins */
+@media print {
+  /* Masquer tous les éléments non nécessaires */
+  .MuiDrawer-root,
+  .MuiAppBar-root,
+  button,
+  .no-print,
+  .bulletin-page-header,
+  .bulletin-page-content {
+    display: none !important;
+  }
+
+  /* Masquer tout le contenu sauf le bulletin */
+  body > *:not(.bulletin-template),
+  .MuiBox-root:not(.bulletin-template) {
+    display: none !important;
+  }
+
+  /* Optimiser la mise en page pour l'impression */
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+  }
+
+  /* Afficher seulement le template du bulletin */
+  .bulletin-template {
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    z-index: 9999 !important;
+  }
+
+  /* Forcer les couleurs en noir pour l'impression */
+  .bulletin-template * {
+    color: black !important;
+    background: white !important;
+  }
+
+  /* Assurer que les tableaux s'impriment correctement */
+  table {
+    page-break-inside: avoid;
+  }
+}

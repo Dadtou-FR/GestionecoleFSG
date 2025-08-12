@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Ecole des Frères de Saint-Gabriel - Système de Gestion Scolaire
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet est un système de gestion scolaire développé avec [Create React App](https://github.com/facebook/create-react-app) pour l'Ecole des Frères de Saint-Gabriel.
 
 ## Available Scripts
 
